@@ -1,0 +1,25 @@
+Description: It fix a few typos
+Origin: vendor
+Author: A. Costa <agcosta@gis.net>
+--- a/debian/man/obm-dir.1
++++ b/debian/man/obm-dir.1
+@@ -8,7 +8,7 @@
+ .SH "DESCRIPTION"
+ .LP 
+ \fBObm\-dir\fR is a pipe menu for openbox.
+-It builds a menu from a directory, alphabetically sorted and can be used inside your openbox's menu to generate menus dinamically.
++It builds a menu from a directory, alphabetically sorted and can be used inside your openbox's menu to generate menus dynamically.
+ .LP 
+ More information about pipe\-menus can be found on http://icculus.org/openbox/index.php/Openbox:Pipemenus
+ .SH "EXAMPLES"
+--- a/debian/man/obm-moz.1
++++ b/debian/man/obm-moz.1
+@@ -22,7 +22,7 @@
+ .IP "\fB\-f\fR, \fB\-\-firefox\fR" 10
+ Look for Firefox bookmarks
+ .IP "\fB\-b\fR FILENAME, \fB\-\-bookmarks\fR=FILENAME" 10
+-Especify the path to the bookmarks.html file
++Specify the path to the bookmarks.html file
+ .IP "\fB\-r ROOT\fR, \fB\-\-root=ROOT\fR" 10
+ Root folder of the bookmarks
+ .IP "\fB\-n\fR BROWSER, \fB\-\-navigator=BROWSER\fR" 10

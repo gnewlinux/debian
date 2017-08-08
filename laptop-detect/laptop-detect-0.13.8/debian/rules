@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+
+VERSION=$(shell dpkg-parsechangelog --show-field Version)
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure
+	sed -e "s/@VERSION@/${VERSION}/g" < laptop-detect.in > laptop-detect

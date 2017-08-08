@@ -1,0 +1,18 @@
+Description: Handle insufficient number of command-line arguments in obm-xdg
+Author: Michael Gilbert <mgilbert@debian.org>
+Bug-Debian: http://bugs.debian.org/693319
+--- obmenu-1.0.orig/pipes/obm-xdg
++++ obmenu-1.0/pipes/obm-xdg
+@@ -426,7 +426,11 @@ if __name__ == "__main__":
+ 			if os.path.isfile("%s/menus/applications.menu"%(cdir)):
+ 				filename = "%s/menus/applications.menu"%(cdir)
+ 				break
+-	
++
++	if len( sys.argv ) < 2:
++		print 'usage: %s [options] /path/to/system.menu'%sys.argv[0]
++		sys.exit(1)
++
+ 	for arg in sys.argv[1:]:
+ 		if arg == "--import":
+ 			role = "import"

@@ -1,0 +1,17 @@
+Source: tubedown
+Section: x11
+Priority: extra
+Maintainer: Diego Sarzi <diegosarzi@gmail.com>
+Build-Depends: debhelper (>= 9), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.0.0
+Homepage: https://github.com/gnewlinux/python/tree/master/tubedown
+
+Package: tubedown
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, youtube-dl, python3-tk
+Suggests: 
+Description: Graphical youtube-dl download mp4 (Python 3)
+ The tubedown uses the youtube-dl software as the download standard.
+ It provides ease for the user, download any video from youtube with 
+ simplicity. The generated file format will be an .mp4 file. 
+ Preserving quality and speed.

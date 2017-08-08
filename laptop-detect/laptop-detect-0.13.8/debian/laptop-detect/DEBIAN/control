@@ -1,0 +1,12 @@
+Package: laptop-detect
+Version: 0.13.8
+Architecture: amd64
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 18
+Depends: dmidecode (>> 2.8-2)
+Section: utils
+Priority: optional
+Description: system chassis type checker
+ This package provides a simple shell script which attempts to determine
+ whether it is being run on a laptop (or similar portable machine). It is
+ mainly useful for installers.

@@ -1,0 +1,213 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.0
+Source: obmenu
+Binary: obmenu
+Architecture: amd64 source
+Version: 1.0-4
+Checksums-Md5:
+ f11afa0dcb28d835618be0bbfd7c787d 1721 obmenu_1.0-4.dsc
+ e23bc46934c74aaffd93d72826b38d87 24494 obmenu_1.0-4_amd64.deb
+Checksums-Sha1:
+ dad6cd5acfcbab519ac1172885b1f52a9f8fc8e0 1721 obmenu_1.0-4.dsc
+ ec67f06929641c69cc8e6aff7146dacb2f770192 24494 obmenu_1.0-4_amd64.deb
+Checksums-Sha256:
+ f27434f8ab9d12d3f8bcf803d461fe89c144be5a88c29951f3f405e37794ebcb 1721 obmenu_1.0-4.dsc
+ fc56a9170dd56ff6a97cb0bc313f2748b63d885e34bf31cf956521b154e5cfd1 24494 obmenu_1.0-4_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Mon, 07 Aug 2017 02:40:18 -0300
+Installed-Build-Depends:
+ autoconf (= 2.69-10),
+ automake (= 1:1.15.1-2),
+ autopoint (= 0.19.8.1-2),
+ autotools-dev (= 20161112.1),
+ base-files (= 10),
+ base-passwd (= 3.5.43),
+ bash (= 4.4-5),
+ binutils (= 2.29-3),
+ bsdmainutils (= 9.0.12+nmu1),
+ bsdutils (= 1:2.29.2-2),
+ build-essential (= 12.3),
+ bzip2 (= 1.0.6-8.1),
+ coreutils (= 8.26-3),
+ cpp (= 4:7.1.0-1),
+ cpp-6 (= 6.4.0-3),
+ cpp-7 (= 7.1.0-12),
+ dash (= 0.5.8-2.5),
+ debconf (= 1.5.63),
+ debhelper (= 10.7.2),
+ debianutils (= 4.8.1.1),
+ dh-autoreconf (= 14),
+ dh-python (= 2.20170125),
+ dh-strip-nondeterminism (= 0.038-1),
+ diffutils (= 1:3.6-1),
+ dpkg (= 1.18.24),
+ dpkg-dev (= 1.18.24),
+ e2fslibs (= 1.43.5-1),
+ e2fsprogs (= 1.43.5-1),
+ file (= 1:5.30-1),
+ findutils (= 4.6.0+git+20170729-2),
+ g++ (= 4:7.1.0-1),
+ g++-7 (= 7.1.0-12),
+ gawk (= 1:4.1.4+dfsg-1),
+ gcc (= 4:7.1.0-1),
+ gcc-6 (= 6.4.0-3),
+ gcc-6-base (= 6.4.0-3),
+ gcc-7 (= 7.1.0-12),
+ gcc-7-base (= 7.1.0-12),
+ gettext (= 0.19.8.1-2+b1),
+ gettext-base (= 0.19.8.1-2+b1),
+ grep (= 3.1-2),
+ groff-base (= 1.22.3-9),
+ gzip (= 1.6-5+b1),
+ hostname (= 3.18+b1),
+ init-system-helpers (= 1.49),
+ intltool-debian (= 0.35.0+20060710.4),
+ libacl1 (= 2.2.52-3+b1),
+ libarchive-zip-perl (= 1.59-1),
+ libasan3 (= 6.4.0-3),
+ libasan4 (= 7.1.0-12),
+ libatomic1 (= 7.1.0-12),
+ libattr1 (= 1:2.4.47-2+b2),
+ libaudit-common (= 1:2.7.7-1),
+ libaudit1 (= 1:2.7.7-1+b2),
+ libblkid1 (= 2.29.2-2),
+ libbsd0 (= 0.8.6-1),
+ libbz2-1.0 (= 1.0.6-8.1),
+ libc-bin (= 2.24-14),
+ libc-dev-bin (= 2.24-14),
+ libc6 (= 2.24-14),
+ libc6-dev (= 2.24-14),
+ libcap-ng0 (= 0.7.7-3+b1),
+ libcc1-0 (= 7.1.0-12),
+ libcilkrts5 (= 7.1.0-12),
+ libcomerr2 (= 1.43.5-1),
+ libcroco3 (= 0.6.12-1),
+ libdb5.3 (= 5.3.28-13),
+ libdebconfclient0 (= 0.229),
+ libdpkg-perl (= 1.18.24),
+ libexpat1 (= 2.2.3-1),
+ libexpat1-dev (= 2.2.3-1),
+ libfdisk1 (= 2.29.2-2),
+ libffi6 (= 3.2.1-6),
+ libfile-stripnondeterminism-perl (= 0.038-1),
+ libgcc-6-dev (= 6.4.0-3),
+ libgcc-7-dev (= 7.1.0-12),
+ libgcc1 (= 1:7.1.0-12),
+ libgcrypt20 (= 1.7.8-2),
+ libgdbm3 (= 1.8.3-14),
+ libglib2.0-0 (= 2.53.4-3),
+ libgmp10 (= 2:6.1.2+dfsg-1),
+ libgomp1 (= 7.1.0-12),
+ libgpg-error0 (= 1.27-3),
+ libicu57 (= 57.1-6),
+ libisl15 (= 0.18-1),
+ libitm1 (= 7.1.0-12),
+ liblsan0 (= 7.1.0-12),
+ liblz4-1 (= 0.0~r131-2+b1),
+ liblzma5 (= 5.2.2-1.3),
+ libmagic-mgc (= 1:5.30-1),
+ libmagic1 (= 1:5.30-1),
+ libmount1 (= 2.29.2-2),
+ libmpc3 (= 1.0.3-1+b2),
+ libmpdec2 (= 2.4.2-1),
+ libmpfr4 (= 3.1.5-1),
+ libmpx2 (= 7.1.0-12),
+ libncurses5 (= 6.0+20170715-2),
+ libncursesw5 (= 6.0+20170715-2),
+ libpam-modules (= 1.1.8-3.6),
+ libpam-modules-bin (= 1.1.8-3.6),
+ libpam-runtime (= 1.1.8-3.6),
+ libpam0g (= 1.1.8-3.6),
+ libpcre3 (= 2:8.39-4),
+ libperl5.26 (= 5.26.0-5),
+ libpipeline1 (= 1.4.2-1),
+ libpython-all-dev (= 2.7.13-2),
+ libpython-dev (= 2.7.13-2),
+ libpython-stdlib (= 2.7.13-2),
+ libpython2.7 (= 2.7.13-4),
+ libpython2.7-dev (= 2.7.13-4),
+ libpython2.7-minimal (= 2.7.13-4),
+ libpython2.7-stdlib (= 2.7.13-4),
+ libpython3-stdlib (= 3.5.3-3),
+ libpython3.5-minimal (= 3.5.4~rc1-1),
+ libpython3.5-stdlib (= 3.5.4~rc1-1),
+ libquadmath0 (= 7.1.0-12),
+ libreadline7 (= 7.0-3),
+ libselinux1 (= 2.6-3+b2),
+ libsigsegv2 (= 2.11-1),
+ libsmartcols1 (= 2.29.2-2),
+ libsqlite3-0 (= 3.19.3-3),
+ libss2 (= 1.43.5-1),
+ libssl1.1 (= 1.1.0f-3),
+ libstdc++-7-dev (= 7.1.0-12),
+ libstdc++6 (= 7.1.0-12),
+ libsystemd0 (= 234-2),
+ libtimedate-perl (= 2.3000-2),
+ libtinfo5 (= 6.0+20170715-2),
+ libtool (= 2.4.6-2),
+ libtsan0 (= 7.1.0-12),
+ libubsan0 (= 7.1.0-12),
+ libudev1 (= 234-2),
+ libunistring2 (= 0.9.7-2),
+ libuuid1 (= 2.29.2-2),
+ libxml2 (= 2.9.4+dfsg1-3),
+ linux-libc-dev (= 4.11.11-1+b1),
+ login (= 1:4.4-4.1),
+ m4 (= 1.4.18-1),
+ make (= 4.1-9.1),
+ man-db (= 2.7.6.1-2),
+ mawk (= 1.3.3-17+b3),
+ mime-support (= 3.60),
+ mount (= 2.29.2-2),
+ ncurses-base (= 6.0+20170715-2),
+ ncurses-bin (= 6.0+20170715-2),
+ patch (= 2.7.5-1+b2),
+ perl (= 5.26.0-5),
+ perl-base (= 5.26.0-5),
+ perl-modules-5.26 (= 5.26.0-5),
+ po-debconf (= 1.0.20),
+ python (= 2.7.13-2),
+ python-all (= 2.7.13-2),
+ python-all-dev (= 2.7.13-2),
+ python-dev (= 2.7.13-2),
+ python-minimal (= 2.7.13-2),
+ python2.7 (= 2.7.13-4),
+ python2.7-dev (= 2.7.13-4),
+ python2.7-minimal (= 2.7.13-4),
+ python3 (= 3.5.3-3),
+ python3-minimal (= 3.5.3-3),
+ python3.5 (= 3.5.4~rc1-1),
+ python3.5-minimal (= 3.5.4~rc1-1),
+ readline-common (= 7.0-3),
+ sed (= 4.4-1),
+ sensible-utils (= 0.0.9+nmu1),
+ sysvinit-utils (= 2.88dsf-59.9),
+ tar (= 1.29b-2),
+ util-linux (= 2.29.2-2),
+ xz-utils (= 5.2.2-1.3),
+ zlib1g (= 1:1.2.8.dfsg-5)
+Environment:
+ DEB_BUILD_OPTIONS="parallel=2"
+ LANG="pt_BR.utf8"
+ SOURCE_DATE_EPOCH="1485359734"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEE2l++szT58FyL+tlK3H4/iXU3Pk4FAlmH/VQVHGRpZWdvc2Fy
+emlAZ21haWwuY29tAAoJENx+P4l1Nz5OeyEQAJt1auVMBPA9ZDlUcHQA65mevhaT
+PoKxY8VL+KYNNhXLFqs9u+dZ+kVCQSXWAu9SaiG9bDyd+PL1ZOuPOcWxpfLYoqmU
+2Ju5pTpWAuq1uCV/Iph1uj6rGgOdOl/eemcsVGYyfub2CzZWO8gBj+lwWHE7Q+H5
+OTTZltrPdlTdyGG3YGp7nisIPJ1jBxJFeYoysslfDf/m6ebTfmMuBL02c33/i94N
+p226AylLa3V5tuQ2DtakQZhgpWSxnV57Wlje+cs8BxxuEMbIuq6jNSsWfExYcklv
+2lBOGTOlUAs4M4kgO7eCH2ElaoJAMTKXrkUZ3cxugxhmFLx3LD6Tsf9+Xb9sXNxn
+iflVvUacYOhgEhJEVslIYPGgLEgf0K5BQcMPMwDbrMyoUcPpVDQ+0k2ixbs24Kzx
+5/tc8pBvnUIKXfbFqRcMfIzpfCDO6eQnBFMyqpIfXCIi58G+iOgUewS2RnE8kfeF
+uM3CHgjGs0JXQ1wbFrc530//gVWFNpksv1m2jbcLWtNbPIvxpEWSf1JAv/b2wygO
+gYmmxOvvhLkMN8Gzn2xGjbwLrF+BpVbQLJpAyw3uVT95lqi95eatlEsH5iwhs3VG
+/7yIz4Ea1oGV0SPPX21LHwVFzIDoYkQVeqO8rkor42o0zc+dd+3x9P+CA88Y4b92
+Njse50I0qYkAiwFm
+=k22F
+-----END PGP SIGNATURE-----

@@ -1,0 +1,51 @@
+Description: Some bug fixes on about-dialog
+Origin: vendor
+Author: <davide@catoblepa.org>
+--- a/obmenu
++++ b/obmenu
+@@ -462,8 +462,11 @@
+ 			self.remove(None)
+ 	
+ 	def show_about(self, args):
+-		#gtk.glade.XML("/usr/local/share/obmenu/obmenu.glade", "aboutdialog1")
+-		gtk.glade.XML(self.gladefile, "aboutdialog1")
++		self.aboutdialog.show()
++
++	def close_about(self, *args):
++		self.aboutdialog.hide()
++		return True
+ 		
+ 	# application init
+ 	def init(self):
+@@ -503,7 +506,10 @@
+ 		
+ 		# Set the basics for GTK
+ 		self.arbol = gtk.glade.XML(self.gladefile, "window1")
+-		
++		self.about = gtk.glade.XML(self.gladefile, "aboutdialog1")
++		self.aboutdialog=self.about.get_widget("aboutdialog1")
++		self.aboutdialog.connect ('delete-event', self.close_about)
++		self.aboutdialog.connect ('response', self.close_about)
+ 		self.treeview=self.arbol.get_widget("treeview1")
+ 		self.label_entry = self.arbol.get_widget("entry1")
+ 		self.action_entry = self.arbol.get_widget("combobox1")
+--- a/obmenu.glade
++++ b/obmenu.glade
+@@ -727,7 +727,7 @@
+ </widget>
+ 
+ <widget class="GtkAboutDialog" id="aboutdialog1">
+-  <property name="visible">True</property>
++  <property name="visible">False</property>
+   <property name="destroy_with_parent">True</property>
+   <property name="name" translatable="yes">Openbox Menu Editor</property>
+   <property name="comments" translatable="yes">Thank you for using this sofware.
+@@ -752,7 +752,7 @@
+   <property name="website_label" translatable="yes">Website</property>
+   <property name="authors">Manuel Colmenero &lt;m.kolme@gmail.com&gt;</property>
+   <property name="translator_credits" translatable="yes" comments="TRANSLATORS: Replace this string with your names, one name per line.">translator-credits</property>
+-  <property name="logo">mnu48.png</property>
++  <property name="logo">/usr/share/obmenu/mnu48.png</property>
+ </widget>
+ 
+ </glade-interface>

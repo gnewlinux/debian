@@ -1,0 +1,132 @@
+ dpkg-buildpackage -rfakeroot -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package obmenu
+dpkg-buildpackage: info: source version 1.0-4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Diego Sarzi <diegosarzi@gmail.com>
+ dpkg-source --before-build obmenu-1.0
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=pybuild
+   dh_auto_clean -O--buildsystem=pybuild
+I: pybuild base:184: python2.7 setup.py clean 
+running clean
+removing '/pkgs/obmenu/obmenu-1.0/.pybuild/pythonX.Y_2.7/build' (and everything under it)
+'build/bdist.linux-amd64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   dh_autoreconf_clean -O--buildsystem=pybuild
+   dh_clean -O--buildsystem=pybuild
+ dpkg-source -b obmenu-1.0
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building obmenu using existing ./obmenu_1.0.orig.tar.gz
+dpkg-source: info: building obmenu in obmenu_1.0-4.debian.tar.xz
+dpkg-source: info: building obmenu in obmenu_1.0-4.dsc
+ debian/rules build
+dh build --with python2 --buildsystem=pybuild
+   dh_update_autotools_config -O--buildsystem=pybuild
+   dh_autoreconf -O--buildsystem=pybuild
+   dh_auto_configure -O--buildsystem=pybuild
+I: pybuild base:184: python2.7 setup.py config 
+running config
+   dh_auto_build -O--buildsystem=pybuild
+I: pybuild base:184: /usr/bin/python setup.py build 
+running build
+running build_py
+copying obxml.py -> /pkgs/obmenu/obmenu-1.0/.pybuild/pythonX.Y_2.7/build
+running build_scripts
+creating build
+creating build/scripts-2.7
+copying and adjusting obmenu -> build/scripts-2.7
+copying and adjusting pipes/obm-xdg -> build/scripts-2.7
+copying and adjusting pipes/obm-dir -> build/scripts-2.7
+copying and adjusting pipes/obm-moz -> build/scripts-2.7
+copying and adjusting pipes/obm-nav -> build/scripts-2.7
+changing mode of build/scripts-2.7/obmenu from 644 to 755
+changing mode of build/scripts-2.7/obm-xdg from 644 to 755
+changing mode of build/scripts-2.7/obm-dir from 644 to 755
+changing mode of build/scripts-2.7/obm-moz from 644 to 755
+changing mode of build/scripts-2.7/obm-nav from 644 to 755
+   dh_auto_test -O--buildsystem=pybuild
+I: pybuild base:184: cd /pkgs/obmenu/obmenu-1.0/.pybuild/pythonX.Y_2.7/build; python2.7 -m unittest discover -v 
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary --with python2 --buildsystem=pybuild
+   dh_testroot -O--buildsystem=pybuild
+   dh_prep -O--buildsystem=pybuild
+   dh_auto_install -O--buildsystem=pybuild
+I: pybuild base:184: /usr/bin/python setup.py install --root /pkgs/obmenu/obmenu-1.0/debian/obmenu 
+running install
+running build
+running build_py
+running build_scripts
+running install_lib
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib/python2.7
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib/python2.7/dist-packages
+copying /pkgs/obmenu/obmenu-1.0/.pybuild/pythonX.Y_2.7/build/obxml.py -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib/python2.7/dist-packages
+byte-compiling /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib/python2.7/dist-packages/obxml.py to obxml.pyc
+running install_scripts
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+copying build/scripts-2.7/obm-nav -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+copying build/scripts-2.7/obmenu -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+copying build/scripts-2.7/obm-moz -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+copying build/scripts-2.7/obm-dir -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+copying build/scripts-2.7/obm-xdg -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin
+changing mode of /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin/obm-nav to 755
+changing mode of /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin/obmenu to 755
+changing mode of /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin/obm-moz to 755
+changing mode of /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin/obm-dir to 755
+changing mode of /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/bin/obm-xdg to 755
+running install_data
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/share
+creating /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/share/obmenu
+copying obmenu.glade -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/share/obmenu
+copying icons/mnu16.png -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/share/obmenu
+copying icons/mnu48.png -> /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/share/obmenu
+running install_egg_info
+Writing /pkgs/obmenu/obmenu-1.0/debian/obmenu/usr/lib/python2.7/dist-packages/obMenu-1.0.egg-info
+   dh_installdocs -O--buildsystem=pybuild
+   dh_installchangelogs -O--buildsystem=pybuild
+   dh_installman -O--buildsystem=pybuild
+   dh_python2 -O--buildsystem=pybuild
+   dh_installmenu -O--buildsystem=pybuild
+   dh_perl -O--buildsystem=pybuild
+   dh_link -O--buildsystem=pybuild
+   dh_strip_nondeterminism -O--buildsystem=pybuild
+   dh_compress -O--buildsystem=pybuild
+   dh_fixperms -O--buildsystem=pybuild
+   dh_missing -O--buildsystem=pybuild
+   dh_strip -O--buildsystem=pybuild
+   dh_makeshlibs -O--buildsystem=pybuild
+   dh_shlibdeps -O--buildsystem=pybuild
+   dh_installdeb -O--buildsystem=pybuild
+   dh_gencontrol -O--buildsystem=pybuild
+dpkg-gencontrol: warning: package obmenu: unused substitution variable ${python:Versions}
+   dh_md5sums -O--buildsystem=pybuild
+   dh_builddeb -O--buildsystem=pybuild
+dpkg-deb: building package 'obmenu' in '../obmenu_1.0-4_amd64.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../obmenu_1.0-4_amd64.changes
+dpkg-genchanges: info: not including original source code in upload
+ dpkg-source --after-build obmenu-1.0
+dpkg-buildpackage: info: binary and diff upload (original source NOT included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile dsc obmenu_1.0-4.dsc Diego Sarzi <diegosarzi@gmail.com>
+
+ fixup_buildinfo obmenu_1.0-4.dsc obmenu_1.0-4_amd64.buildinfo
+ signfile buildinfo obmenu_1.0-4_amd64.buildinfo Diego Sarzi <diegosarzi@gmail.com>
+
+ fixup_changes dsc obmenu_1.0-4.dsc obmenu_1.0-4_amd64.changes
+ fixup_changes buildinfo obmenu_1.0-4_amd64.buildinfo obmenu_1.0-4_amd64.changes
+ signfile changes obmenu_1.0-4_amd64.changes Diego Sarzi <diegosarzi@gmail.com>
+
+Successfully signed dsc, buildinfo, changes files

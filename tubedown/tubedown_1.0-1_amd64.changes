@@ -1,0 +1,56 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Mon, 07 Aug 2017 01:29:12 -0300
+Source: tubedown
+Binary: tubedown
+Architecture: source all
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Diego Sarzi <diegosarzi@gmail.com>
+Changed-By: Diego Sarzi <diegosarzi@gmail.com>
+Description:
+ tubedown   - Graphical youtube-dl download mp4 (Python 3)
+Closes: 871245
+Changes:
+ tubedown (1.0-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #871245)
+Checksums-Sha1:
+ de11eb0a3726e3f791559e7bd962173c6402ce97 1781 tubedown_1.0-1.dsc
+ e3efb6dc491d09b8893608a075c1bc00112f2793 20359 tubedown_1.0.orig.tar.gz
+ ebb666551d84224ed48e5cbd21bde1e782a5db6f 1864 tubedown_1.0-1.debian.tar.xz
+ 0137b42a753ac4b36b21f4a18d4a28e66754106a 9692 tubedown_1.0-1_all.deb
+ 967da923a0ed040d6be7659d4b603e149e7655fd 5926 tubedown_1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ ec4232d71e0189709330150c394c263c4297613b1c7775dc8f93f6dad42563ac 1781 tubedown_1.0-1.dsc
+ 98aecd50f986768e9ca6513bacdbd6d252df372e9ecce7e9675d92fcb42ec18d 20359 tubedown_1.0.orig.tar.gz
+ 94a31187475e31d59969b95baed5db9062e495dbf7726c31288d597178198ad6 1864 tubedown_1.0-1.debian.tar.xz
+ d5a2af576d01c15972a4994833b4407f4de89f81078d01fc272797d316bc6290 9692 tubedown_1.0-1_all.deb
+ 1860f862b6965d61662664bd81be046ba4613e7d10a92e8a4fe56bf2932bfdfe 5926 tubedown_1.0-1_amd64.buildinfo
+Files:
+ bed625a733de49cfcd0b016f4cc2242a 1781 x11 extra tubedown_1.0-1.dsc
+ bcc68760ff579ea4a9cd07571c020812 20359 x11 extra tubedown_1.0.orig.tar.gz
+ d7faf7be4581ed2eb10a942e084cfb8b 1864 x11 extra tubedown_1.0-1.debian.tar.xz
+ 016112bc6de936e3658fd87e350b1704 9692 x11 extra tubedown_1.0-1_all.deb
+ 23aa0674c470f1b49e6ece5831814ddd 5926 x11 extra tubedown_1.0-1_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEE2l++szT58FyL+tlK3H4/iXU3Pk4FAlmImjAVHGRpZWdvc2Fy
+emlAZ21haWwuY29tAAoJENx+P4l1Nz5OAcIQAKi9BqwvYV/Qdu/8TXT1e5EavJVV
+/QypgUqwSbFEa3rIXVy/CL8z7VoM6fDjdt3CO1zVdBkhSXGgN5UmOcSSBksxnphY
+4+xJab43sE5iZCVwftZBj0CKeWO1IroEJeN6h9NztHzo9J3QADwfoECjvQbzFjEa
+gNX98jnbrk2hMt/6a/kbWpFZQqWxe7kbT5XKN/CEfFXui0V6JH1psIcV4qTxlEJ4
+zGa+YI986MUby8geSfrElxdqr2JWFeSX8U07beazn2GzI6skj3r4wecIuwwUh8qu
+5d4LUFnadgEtvQVpJN/IVZO2wPrTni5gVTJAfq/BZlFONdwH9t4cFSb+BeNU8JMe
+mo5fyDKlmDd20sCJ2lpWmR1Px+/aEOcvxXlM/0eDjXgqXMWO2TLDn70vR9YCoxuH
+UKK/B6TnJYDtHm4RkgMe0YPR+56QG6TmkhSlU35OJsNWV1xNOOko+noRaJTX2QrL
+TG+47s/jOa4psM4rfP2YO+KhibtHp3+1+UFKpuue6rFGaB8AFwu6eOA1LsPiK+pD
+oMxNxRkGbcEY1o1TaxhSulcfttjppvQH+OT7rUrGMuwZQdpAyOuxMCyFcIPetnZg
+yrGp8EFdkcibQaYkD+5iiv32obWUG7axFBBKJ5ye8lL0ere/4eEuNYV/vBYuO4Hk
+iLzFOxri5kgk26U4
+=eA+M
+-----END PGP SIGNATURE-----

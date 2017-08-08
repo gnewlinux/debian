@@ -1,0 +1,22 @@
+Description: non-standard python package
+Origin: vendor
+Author: <davide@catoblepa.org>
+--- a/obxml.py
++++ b/obxml.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#  obxml.py
+ #
+ #  Openbox Menu Editor 1.0 beta
+ # 
+--- a/setup.py
++++ b/setup.py
+@@ -7,6 +7,8 @@
+ setup(name='obMenu',
+       version='1.0',
+       description='Openbox Menu Editor',
++      license='GPL',
++      url='http://obmenu.sourceforge.net/',
+       author='Manuel Colmenero',
+       author_email='m.kolme@gmail.com',
+       scripts=['obmenu', 'pipes/obm-xdg','pipes/obm-dir','pipes/obm-moz','pipes/obm-nav'],

@@ -1,0 +1,14 @@
+Description: Sort by name obm-nav pipes-menu
+Origin: vendor
+Author: <davide@catoblepa.org>
+--- a/pipes/obm-nav
++++ b/pipes/obm-nav
+@@ -45,6 +45,8 @@
+ n = 0
+ p = 1
+ mid = None
++files.sort()
++dirs.sort()
+ for d in dirs:
+ 	if n > 15:
+ 		menu.createSep(mid,0)

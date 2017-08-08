@@ -1,0 +1,56 @@
+Description: Upstream changes introduced in version 1.0-2
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ obmenu (1.0-2) unstable; urgency=low
+ .
+   [ Edgar Antonio Palma de la Cruz ]
+   * New maintainer. Closes: #583246, #512607
+   * Bumped Standards-Version to 3.9.2
+   * Bumped compat file and debhelper to 8
+   * Added misc depends to control file.
+   * Switch to dpkg-source 3.0 (quilt) format.
+   * Removed cdbs and dpatch from control file.
+   * Added a watch file.
+   * Fixed a few typos on manpages of obm-dir and obm-moz. Closes: #573819
+   * Fix the python2.5 dependency. Closes: #623012
+   * Removed post*debhelper.
+   * Added python-Depends to binary.
+   * Added a homepage.
+   * Moved to Applications/System/Administration section on menu file.
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Edgar Antonio Palma de la Cruz <xbytemx@gmail.com>
+Bug-Debian: http://bugs.debian.org/512607
+Bug-Debian: http://bugs.debian.org/573819
+Bug-Debian: http://bugs.debian.org/583246
+Bug-Debian: http://bugs.debian.org/623012
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ obmenu-1.0/Changelog
+@@ -0,0 +1,11 @@
++- Automatically reconfigures Openbox
++
++- Create and modify pipemenus. Pipemenus are a way of creating menus
++  dynamically. For more info, visit openbox documentation.
++
++- The same with "link" menus, which are references to other menus by their IDs.
++  That way you can reproduce a menu in several places of your file.
++
++- Lot's of GUI enhancements
++
++- Multifile support (New, open, save, ..)

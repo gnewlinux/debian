@@ -1,0 +1,66 @@
+ dpkg-buildpackage -rfakeroot -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package laptop-detect
+dpkg-buildpackage: info: source version 0.13.8
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Joao Eriberto Mota Filho <eriberto@debian.org>
+ dpkg-source --before-build laptop-detect-0.13.8
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_autoreconf_clean
+   dh_clean
+ dpkg-source -b laptop-detect-0.13.8
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building laptop-detect in laptop-detect_0.13.8.tar.xz
+dpkg-source: info: building laptop-detect in laptop-detect_0.13.8.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/pkgs/laptop-detect/laptop-detect-0.13.8'
+dh_auto_configure
+sed -e "s/@VERSION@/0.13.8/g" < laptop-detect.in > laptop-detect
+make[1]: Leaving directory '/pkgs/laptop-detect/laptop-detect-0.13.8'
+   dh_auto_build
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installman
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'laptop-detect' in '../laptop-detect_0.13.8_amd64.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../laptop-detect_0.13.8_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build laptop-detect-0.13.8
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile laptop-detect_0.13.8.dsc Joao Eriberto Mota Filho <eriberto@debian.org>
+gpg: skipped "Joao Eriberto Mota Filho <eriberto@debian.org>": Sem chave secreta
+gpg: /tmp/debsign.YAQohQXP/laptop-detect_0.13.8.dsc: clear-sign failed: Sem chave secreta
+debsign: gpg error occurred!  Aborting....

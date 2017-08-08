@@ -1,0 +1,16 @@
+Source: laptop-detect
+Section: utils
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 3.9.8
+VCS-Git: https://anonscm.debian.org/git/collab-maint/laptop-detect.git
+VCS-Browser: https://anonscm.debian.org/git/collab-maint/laptop-detect.git
+
+Package: laptop-detect
+Architecture: any
+Depends: ${misc:Depends}, dmidecode (>> 2.8-2) [amd64 i386]
+Description: system chassis type checker
+ This package provides a simple shell script which attempts to determine
+ whether it is being run on a laptop (or similar portable machine). It is
+ mainly useful for installers.

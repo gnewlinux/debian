@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 25 Jan 2017 13:55:34 -0200
+Source: obmenu
+Binary: obmenu
+Architecture: source amd64
+Version: 1.0-4
+Distribution: unstable
+Urgency: medium
+Maintainer: Diego Sarzi <diegosarzi@gmail.com>
+Changed-By: Diego Sarzi <diegosarzi@gmail.com>
+Description:
+ obmenu     - Graphical menu editor for openbox
+Closes: 852452
+Changes:
+ obmenu (1.0-4) unstable; urgency=medium
+ .
+   * debian/control:
+       - Removed "${python:Versions}" to avoid the package can't
+         be uninstallable. (Closes: #852452)
+   * debian/copyright:
+       - Updated the copyright years.
+Checksums-Sha1:
+ dad6cd5acfcbab519ac1172885b1f52a9f8fc8e0 1721 obmenu_1.0-4.dsc
+ 2b7c7ec7fe178279c9caffef62db37589d76efad 6380 obmenu_1.0-4.debian.tar.xz
+ 8af778a5de6b0907f1d2e584c4401a0829865843 6173 obmenu_1.0-4_amd64.buildinfo
+ ec67f06929641c69cc8e6aff7146dacb2f770192 24494 obmenu_1.0-4_amd64.deb
+Checksums-Sha256:
+ f27434f8ab9d12d3f8bcf803d461fe89c144be5a88c29951f3f405e37794ebcb 1721 obmenu_1.0-4.dsc
+ e03a5d2608168fac303f6832193047b9842056b57f276b9b4911738ce0ce822e 6380 obmenu_1.0-4.debian.tar.xz
+ b5af3fad150d44cfcafdf65a36f021f5ad5bc5a23a04bc20935e28c5c7122330 6173 obmenu_1.0-4_amd64.buildinfo
+ fc56a9170dd56ff6a97cb0bc313f2748b63d885e34bf31cf956521b154e5cfd1 24494 obmenu_1.0-4_amd64.deb
+Files:
+ f11afa0dcb28d835618be0bbfd7c787d 1721 x11 extra obmenu_1.0-4.dsc
+ 4e6195055f0a02ea3f49db91fac0a2a2 6380 x11 extra obmenu_1.0-4.debian.tar.xz
+ 0e681416c35f2197c8d343343455e547 6173 x11 extra obmenu_1.0-4_amd64.buildinfo
+ e23bc46934c74aaffd93d72826b38d87 24494 x11 extra obmenu_1.0-4_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEE2l++szT58FyL+tlK3H4/iXU3Pk4FAlmH/VUVHGRpZWdvc2Fy
+emlAZ21haWwuY29tAAoJENx+P4l1Nz5OsLYP/jmXVqz7A8+8OXONRKBOBZPsuf8z
+lJWUJGNxS1zcJCgbElF39KOeQjJMxarMeiSYrkv3PHKF+ptb4h6pu3njgz5WMCEe
+7PuUbtshiSI5vQYcaLdnaCl6ZSGl2bHPvAOZuSjAaIckuuEWraRS4d5H2oxTQXdS
+EGi28o08wOptENzkF7/cr4Ffd3JqnD4PaDRrkM3uPiBwmJeLrBNA9vYL0vAzd/8/
+9ac5eMqq5lg4WWE/7lSeYRpT6z5qxijR5ahHCZgDMiKQIrzw/3q8rVmF8zdb2W2S
+u887uzwuAHOKr0IWKJ9edMDaMRkZLLUVT3DeLFSQ4cKpRTZo70tB/G4u2OcZbpeS
+IEzr0JQm0ZwoT/WSPsKshse6CWwlcZ9PgZN/+2cCR6PACc2dU3N3Eeyl//IEO0p5
+2/KeZ8kmNn3eZhAKUnrNwbb/MwxoqzlcCMJJIklkiidxVjwwAaxh9dicOecm2Ofx
+4Fx3kO19mC/OF45ofLluYMnX6Bhnsuo+3nx/FbF8BeURjHFbDVS5UsiRgAjQ2eZe
+EykwRVEu8SO/x67Gt3FwiLNuZJd5Z1e3DlmohZA7bEWyyXCpq9OOoIqHRhVwpSFI
+ymm5G6/Vo6SLFHRAgtH7vXe5x4FKDALMQ81pyE65lkbrm12ugsoMLZqKyEwIQD9d
+BwCg0NYOBxuAuqB/
+=O80N
+-----END PGP SIGNATURE-----

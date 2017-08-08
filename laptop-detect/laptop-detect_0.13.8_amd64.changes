@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Tue, 27 Dec 2016 01:11:30 -0200
+Source: laptop-detect
+Binary: laptop-detect
+Architecture: source amd64
+Version: 0.13.8
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Changed-By: Joao Eriberto Mota Filho <eriberto@debian.org>
+Description:
+ laptop-detect - system chassis type checker
+Closes: 684188
+Changes:
+ laptop-detect (0.13.8) unstable; urgency=medium
+ .
+   * QA upload.
+   * Set Debian QA Group as maintainer. (see #847246)
+   * Migrations:
+       - debian/copyright to 1.0 format.
+       - DebSrc to 3.0.
+       - DH level to 10.
+       - Dropped CDBS.
+   * debian/clean: added to remove a file created by build process.
+   * debian/control:
+       - Added ${misc:Depends} variable to Depends field.
+       - Bumped Standards-Version to 3.9.8.
+       - Improved long description. Thanks to Justin B Rye <jbr@edlug.org.uk>.
+         (Closes: #684188)
+       - Updated Vcs-* fields.
+   * debian/dirs: removed because debian/install already creates the dir.
+   * debian/rules: using a modern option to dpkg-parsechangelog command.
+Checksums-Sha1:
+ 0ae08241336810e8525ebe1fd0e06ab880709802 695 laptop-detect_0.13.8.dsc
+ 38297863894de6dc47ad4e6b812249adae925f35 5216 laptop-detect_0.13.8.tar.xz
+ 069ffdfeaa0a0d514a6e18cec797e02991ada5fc 4355 laptop-detect_0.13.8_amd64.buildinfo
+ c5a04a513b895356c4796f0030da9866783e0769 6162 laptop-detect_0.13.8_amd64.deb
+Checksums-Sha256:
+ 11b15434af9972efc529af13f362106c759efb0559559dffae0d682ab05abdbd 695 laptop-detect_0.13.8.dsc
+ a8dda2e9e399deea9bc0d67133aaf7431233a13b43bd622acfa047e700536f13 5216 laptop-detect_0.13.8.tar.xz
+ a331262759e5f93241ceef0ef3e9926b131826dd025948bf64bfd98d646acf5f 4355 laptop-detect_0.13.8_amd64.buildinfo
+ 1c73e4862ecf3f4f55a6e459cb4a786b6a709c8cf74d70995a603cac9f756fca 6162 laptop-detect_0.13.8_amd64.deb
+Files:
+ 3aabc800a63d847609934affed8a5ad8 695 utils optional laptop-detect_0.13.8.dsc
+ c289fdffe6954701eced7c51c704dd0c 5216 utils optional laptop-detect_0.13.8.tar.xz
+ 475bcf5b8480948f2ada11f3ffbe0860 4355 utils optional laptop-detect_0.13.8_amd64.buildinfo
+ b77268a3bfa5b6dc66683cffe9e47a22 6162 utils optional laptop-detect_0.13.8_amd64.deb
